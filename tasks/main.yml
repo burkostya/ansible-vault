@@ -169,3 +169,7 @@
   until: check_result is succeeded
   delay: 10
   changed_when: false
+
+- name: expose vault address
+  set_fact:
+     vault_address: "{{ vault_address }}"
